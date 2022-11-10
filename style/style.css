@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(215, 222, 222);
+}
+
+nav {
+    background-color: white;
+    position:sticky;
+    top: 0;
+    text-align: right;
+}
+nav li{
+    display: inline;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#profile {
+    background-color: white;
+}
+
+.head {
+    padding: 15px;
+}
+img {
+    display: flex;
+    flex-direction: row;
+
+}
