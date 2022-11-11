@@ -17,7 +17,7 @@
   }
   
   /* Style the top navigation bar */
-  .navbar {
+  .nav {
     display: flex;
     background-color: #333;
   }
