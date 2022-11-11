@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="tampilkan_nama()">klik saya</button>
+    <div id="hasil"></div>
+
+    <script>
+      function tampilkan_nama() {
+        document.getElementById("hasil").innerHTML = "nama saya dwi";
+      }
+
+      function hitungGrade(nilai) {
+        let grade = "";
+        fi (nilai>=90) {
+            grade="A";
+        } else if (nilai>=80) {
+            grade="b";
+        } else if (nilai>=70) {
+            rade="c";
+        } else {
+            grade="e";
+        }
+        return grade;
+      }
+
+      const nilai = prompt("input nilai: ");
+    </script>
+  </body>
+</html>
