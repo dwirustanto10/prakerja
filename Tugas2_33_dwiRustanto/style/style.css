@@ -2,9 +2,7 @@
     margin: 0;
     padding: 0;
     background-color: rgb(211, 208, 208);
-
-  }
-  
+  }  
   
   nav {
     margin: 0;
@@ -45,28 +43,28 @@
 -moz-box-shadow: 0px 2px 10px 1px rgba(0,0,0,1);
   }
   
-  header img {
-    
-    /* margin-left: 15px; */
-    border-radius: 45px;
-    
+  header img {    
+    border-radius: 45px;    
   }
+
   .profile {
     padding: 15px;
     font-size: small;
     flex-grow: 1;
-    border-right: rgb(212, 210, 210) 4px solid ;
-    
+    border-right: rgb(212, 210, 210) 4px solid ;    
   }
+
   .edit_profile {
     display: flex;
   }
+
   .edit_profile input{
     width: 50%;
     height: 35px;
     margin-right: 10px;
     color: #aaa;
   }
+
   .edit_profile input:hover {
     background-color: rgb(150, 148, 148);
     color: white;
