@@ -1,0 +1,103 @@
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(211, 208, 208);
+
+  }
+  
+  
+  nav {
+    margin: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    box-shadow: 0px 5px 10px 3px rgb(115, 116, 116);
+  }
+
+  nav li {
+    display: inline;
+  }
+  
+  nav a {
+    font-size: smaller;
+    color: black;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+    font-weight: bolder;
+  }
+  
+
+  header {
+    margin: 25px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+  
+  header img {
+    
+    margin-left: 15px;
+    border-radius: 45px;
+    
+  }
+  .profile {
+    padding: 15px;
+    font-size: small;
+    flex-grow: 2;
+  }
+  .edit_profile {
+    display: flex;
+  }
+  .edit_profile input{
+    width: 50%;
+    height: 35px;
+    margin-right: 10px;
+    color: #aaa;
+  }
+  .edit_profile input:hover {
+    background-color: rgb(150, 148, 148);
+    color: white;
+    font-weight: bolder;
+  }
+  #kontak {
+    background-color: blue;
+  }
+  .view {
+    padding-left: 10px;
+    flex-grow: 1;
+    border-left: rgb(212, 210, 210) 4px solid ;
+  }
+  .data {
+    flex-grow: 5;
+  }
+
+  main {
+    margin: 25px;
+    background-color: white;
+    font-weight: bolder;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+  .submit {
+    background-color: green;
+    width: 100%;
+    color: white;
+  }
+   input {
+    width: 99%;
+   }
+
+
+  @media screen and (max-width:520px) {
+    header, nav{   
+      flex-direction: column;
+    }
+  }
