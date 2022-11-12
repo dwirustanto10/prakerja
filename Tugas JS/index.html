@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan</title>
+  </head>
+  <body>
+    <label for="">Pesan</label>
+    <input type="text" id="inputPesan" />
+    <br />
+    <label for="">Berapa kali</label>
+    <input id="kali" type="number" />
+    <br />
+    <button onclick="cetakBerapa()">Cetak</button>
+
+    <ol id="hasil">
+      <li></li>
+    </ol>
+
+    <script>
+      let pesan = document.getElementById("inputPesan");
+      let kali = document.getElementById("kali");
+
+      function print() {
+        const dt = document.getElementById("hasil");
+        let hitung = "kali";
+        while (hitung <= 1000) {
+          dt.innerHTML =
+            dt.innerHTML + "<li>Saya tidak akan terlambat lagi</li>";
+          hitung++;
+        }
+      }
+
+      function cetakBerapa() {
+        let pesan = document.getElementById("inputPesan").value;
+      }
+    </script>
+  </body>
+</html>
+
+simpan "inputPesan" dengan sembarang input text simpan "kali" dengan sembarang
+angka jika di klik cetak maka isian "pesan" di ulang sebanyak isian "kali"
