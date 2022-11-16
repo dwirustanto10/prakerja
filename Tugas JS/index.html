@@ -7,38 +7,29 @@
     <title>Latihan</title>
   </head>
   <body>
-    <label for="">Pesan</label>
-    <input type="text" id="inputPesan" />
-    <br />
-    <label for="">Berapa kali</label>
-    <input id="kali" type="number" />
-    <br />
-    <button onclick="cetakBerapa()">Cetak</button>
-
-    <ol id="hasil">
-      <li></li>
-    </ol>
+    <label>Kondisi: </label>
+    <input type="text" id="kondisi" /><br /><br />
+    <label>Kondisi2 </label>
+    <input type="number" id="berapa" /><br /><br />
+    <button onclick="cetak()">Cek Kondisi</button>
+    <div id="hasil"></div>
 
     <script>
-      let pesan = document.getElementById("inputPesan");
-      let kali = document.getElementById("kali");
-
-      function print() {
-        const dt = document.getElementById("hasil");
-        let hitung = "kali";
-        while (hitung <= 1000) {
-          dt.innerHTML =
-            dt.innerHTML + "<li>Saya tidak akan terlambat lagi</li>";
-          hitung++;
+      function cetak() {
+        let pesan = document.getElementById("kondisi").value;
+        let number = document.getElementById("berapa").value;
+        let i = 0;
+        while (i < 4) {
+          // for (let i = 0; i < number; i++) {
+          document.getElementById("hasil").innerHTML = pesan;
+          i++;
         }
       }
 
-      function cetakBerapa() {
-        let pesan = document.getElementById("inputPesan").value;
-      }
+      console.log(typeof number);
     </script>
   </body>
 </html>
 
-simpan "inputPesan" dengan sembarang input text simpan "kali" dengan sembarang
-angka jika di klik cetak maka isian "pesan" di ulang sebanyak isian "kali"
+<!-- simpan "inputPesan" dengan sembarang input text simpan "kali" dengan sembarang
+// angka jika di klik cetak maka isian "pesan" di ulang sebanyak isian "kali" -->
